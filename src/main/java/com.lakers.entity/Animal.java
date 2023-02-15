@@ -1,5 +1,6 @@
 package com.lakers.entity;
 
+import java.math.BigInteger;
 import java.util.Objects;
 
 /**
@@ -19,6 +20,15 @@ public class Animal {
     public Animal(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public static void main(String[] args) {
+        int number = 100;
+        BigInteger factorial = BigInteger.valueOf(1);
+        for (int i = 1; i <= number; i++) {
+            factorial = factorial.multiply(BigInteger.valueOf(i));
+        }
+        System.out.println("Factorial of " + number + " is: " + factorial);
     }
 
     public String getName() {
