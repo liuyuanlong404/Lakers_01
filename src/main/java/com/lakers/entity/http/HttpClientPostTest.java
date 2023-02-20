@@ -1,4 +1,4 @@
-package com.lakers.entity.annotation.http;
+package com.lakers.entity.http;
 
 import java.net.URI;
 import java.net.http.HttpClient;

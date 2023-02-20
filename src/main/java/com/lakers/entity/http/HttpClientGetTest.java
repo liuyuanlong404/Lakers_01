@@ -1,4 +1,4 @@
-package com.lakers.entity.annotation.http;
+package com.lakers.entity.http;
 
 import com.alibaba.fastjson2.JSONObject;
 import com.lakers.entity.ResponseData;

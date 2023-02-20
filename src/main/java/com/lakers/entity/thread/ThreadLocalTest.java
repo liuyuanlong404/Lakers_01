@@ -12,7 +12,7 @@ public class ThreadLocalTest {
 
 
     public static void main(String[] args) {
-        try (UserContext ignored = new UserContext(new User(1, "Lakers"))){
+        try (UserContext ignored = new UserContext(new User(1, "Lakers"))) {
             show();
             search();
             update();
@@ -21,11 +21,15 @@ public class ThreadLocalTest {
 
     private static void update() {
         User user = UserContext.currentUser();
+        System.out.println(user);
         System.out.println("更新数据库！！！");
     }
 
     private static void search() {
         User user = UserContext.currentUser();
+        user.setId(2);
+        user.setName("rose");
+        System.out.println(user);
         System.out.println("查询数据库！！！");
     }
 
